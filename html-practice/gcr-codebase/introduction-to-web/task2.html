@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client-Server Model Architecture</title>
+</head>
+<body>
+    <h1>Client-Server Model Overview</h1>
+    <p>The client-server model describes how a client (such as a web browser) requests resources from a centralized server.</p>
+
+    <h2>Architecture Diagram</h2>
+    <svg width="600" height="200" style="border: 1px solid #ccc; background-color: #f9f9f9;">
+        <rect x="30" y="60" width="120" height="80" rx="10" fill="#4A90E2" stroke="#333" stroke-width="2"/>
+        <text x="90" y="105" font-family="sans-serif" font-size="14" fill="#fff" text-anchor="middle">Client (Browser)</text>
+        
+        <path d="M 160 80 L 430 80" stroke="#333" stroke-width="2"/>
+        <text x="295" y="70" font-family="sans-serif" font-size="12" text-anchor="middle">1. HTTP Request</text>
+
+        <path d="M 440 120 L 170 120" stroke="#333" stroke-width="2"/>
+        <text x="295" y="140" font-family="sans-serif" font-size="12" text-anchor="middle">2. HTTP Response (HTML/CSS/JS)</text>
+
+        <rect x="450" y="60" width="120" height="80" rx="10" fill="#50E3C2" stroke="#333" stroke-width="2"/>
+        <text x="510" y="105" font-family="sans-serif" font-size="14" fill="#333" text-anchor="middle">Web Server</text>
+    </svg>
+</body>
+</html>

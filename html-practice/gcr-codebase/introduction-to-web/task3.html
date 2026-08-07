@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Request & Display Lifecycle</title>
+</head>
+<body>
+    <h1>How Browsers Fetch & Display Web Pages</h1>
+    
+    <ol>
+        <li><strong>URL Entry & DNS Resolution:</strong> User enters a URL (e.g., www.example.com). The browser queries DNS servers to translate the domain name into an IP address.</li>
+        <li><strong>Establishing TCP/IP Connection:</strong> The browser initiates a TCP handshake (and TLS handshake for HTTPS) with the web server.</li>
+        <li><strong>Sending HTTP Request:</strong> The browser sends an HTTP GET request asking for the requested webpage resource.</li>
+        <li><strong>Server Processing & Response:</strong> The web server processes the request and sends back an HTTP response containing HTML, CSS, JavaScript, and assets.</li>
+        <li><strong>Parsing DOM & CSSOM:</strong> The browser parses HTML to construct the DOM tree and parses CSS to construct the CSSOM tree.</li>
+        <li><strong>Rendering & Painting:</strong> The browser combines DOM and CSSOM into a render tree, calculates layout positions, and paints pixels onto the screen.</li>
+    </ol>
+</body>
+</html>
